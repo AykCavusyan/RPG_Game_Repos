@@ -15,7 +15,6 @@ namespace RPG.Control
         // Start is called before the first frame update
         void Start()
         {
-           
             mover = GetComponent<Mover>();
         }
 
@@ -33,7 +32,10 @@ namespace RPG.Control
             {
                 CombatTarget target = hit.transform.GetComponent<CombatTarget>();
 
-                if (target == null) continue;
+                if (target == null)
+                {
+                    continue;
+                } 
                 
                 if (Input.GetMouseButtonDown(1))
                 {
@@ -52,7 +54,7 @@ namespace RPG.Control
             {
                 if (Input.GetMouseButton(1))
                 {
-                    mover.MoveTo(hit.point);
+                    mover.StartMoveACtion(hit.point);
                 }
                 return true;
             }

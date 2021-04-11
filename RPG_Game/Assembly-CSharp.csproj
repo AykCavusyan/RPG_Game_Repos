@@ -56,14 +56,17 @@
     <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio Tools for Unity\16.0\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\Combat\Fighter.cs" />
     <Compile Include="Assets\Scripts\Movement\Mover.cs" />
     <Compile Include="Assets\Scripts\Core\FollowCamera.cs" />
-    <Compile Include="Assets\Scripts\Control\PlayerController.cs" />
-    <Compile Include="Assets\Scripts\Combat\Fighter.cs" />
     <Compile Include="Assets\Scripts\Combat\CombatTarget.cs" />
+    <Compile Include="Assets\Scripts\Control\PlayerController.cs" />
+    <Compile Include="Assets\Scripts\Core\ActionScheduler.cs" />
+    <Compile Include="Assets\Scripts\Core\IAction.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\Asset Packs\Synty - Polygon Student Sample\README - Usage Rights for these assets.txt" />
+     <None Include="Assets\Asset Packs\Animations by Explosive\README - Usage Rights for these assets 1.txt" />
     <Reference Include="UnityEngine">
       <HintPath>C:\Users\Sebastian\OneDrive\Desktop\Unity\2020.3.2f1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
     </Reference>
@@ -645,6 +648,14 @@
       <Project>{21E4B591-3D54-E29D-9D89-A5E667C73150}</Project>
       <Name>Unity.VisualStudio.Editor</Name>
     </ProjectReference>
+    <ProjectReference Include="Unity.Sysroot.Linux_x86_64.csproj">
+      <Project>{E021727E-248A-394C-FF5D-C32518AA0D4C}</Project>
+      <Name>Unity.Sysroot.Linux_x86_64</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.Toolchain.Win-x86_64-Linux-x86_64.csproj">
+      <Project>{C50680A8-6229-7B94-D549-41D511299E31}</Project>
+      <Name>Unity.Toolchain.Win-x86_64-Linux-x86_64</Name>
+    </ProjectReference>
     <ProjectReference Include="Unity.Timeline.Editor.csproj">
       <Project>{B5BB3D68-654D-48E8-5954-8B86276E0771}</Project>
       <Name>Unity.Timeline.Editor</Name>
@@ -668,6 +679,10 @@
     <ProjectReference Include="UnityEngine.UI.csproj">
       <Project>{4281408A-AD21-D8AB-E599-B5391AAB96F5}</Project>
       <Name>UnityEngine.UI</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.SysrootPackage.Editor.csproj">
+      <Project>{565FDF92-511F-E528-1B2B-161A7349829E}</Project>
+      <Name>Unity.SysrootPackage.Editor</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

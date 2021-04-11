@@ -1,3 +1,5 @@
+
+using RPG.Core;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -6,7 +8,7 @@ using UnityEngine.UIElements;
 
 namespace RPG.Movement
 {
-    public class Mover : MonoBehaviour
+    public class Mover : MonoBehaviour, IAction
     {
         [SerializeField] private NavMeshAgent player;
 
@@ -31,6 +33,12 @@ namespace RPG.Movement
             GetComponent<Animator>().SetFloat("forwardspeed", speed);
         }
 
+        public void StartMoveACtion(Vector3 destination)
+        {
+            GetComponent<ActionScheduler>().StartAction(this);
+            MoveTo(destination);
+        }
+
 
         public void MoveTo(Vector3 destination)
         {
@@ -43,7 +51,7 @@ namespace RPG.Movement
             player.isStopped = false;
         }
 
-        public void Stop()
+        public void Cancel()
         {
             player.isStopped = true;
         }
