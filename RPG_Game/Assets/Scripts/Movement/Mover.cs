@@ -11,17 +11,18 @@ namespace RPG.Movement
     public class Mover : MonoBehaviour, IAction
     {
         [SerializeField] private NavMeshAgent player;
-
+        Health health;
 
         // Start is called before the first frame update
         void Start()
         {
-
+            health = GetComponent<Health>();
         }
 
         // Update is called once per frame
         void Update()
         {
+            player.enabled = !health.IsDead();
             UpdateAnimator();
         }
 

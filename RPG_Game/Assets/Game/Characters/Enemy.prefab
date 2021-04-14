@@ -27,6 +27,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   healthPoints: 10
+--- !u!114 &-405797263525343484
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2928346209065457134}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3be82e696c986a143b8444d566c5f215, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  chaseDistance: 5
 --- !u!114 &5003159174095303583
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -109,7 +122,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3328288086530017235, guid: bde1255e5b7e4d045b4904167ba335d6, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 15.966
+      value: 14.63
       objectReference: {fileID: 0}
     - target: {fileID: 3328288086530017235, guid: bde1255e5b7e4d045b4904167ba335d6, type: 3}
       propertyPath: m_LocalPosition.y
@@ -117,7 +130,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3328288086530017235, guid: bde1255e5b7e4d045b4904167ba335d6, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -27.436
+      value: -30.91
       objectReference: {fileID: 0}
     - target: {fileID: 3328288086530017235, guid: bde1255e5b7e4d045b4904167ba335d6, type: 3}
       propertyPath: m_LocalRotation.w
@@ -149,7 +162,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7468118257224018941, guid: bde1255e5b7e4d045b4904167ba335d6, type: 3}
       propertyPath: m_Name
-      value: Enemy
+      value: Enemy (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7501020956302944930, guid: bde1255e5b7e4d045b4904167ba335d6, type: 3}
+      propertyPath: m_Speed
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bde1255e5b7e4d045b4904167ba335d6, type: 3}
