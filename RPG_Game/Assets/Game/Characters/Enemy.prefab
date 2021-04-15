@@ -40,6 +40,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   chaseDistance: 5
+  suspicionTime: 5
+  patrolPath: {fileID: 0}
+  waypointTolerance: 1
 --- !u!114 &5003159174095303583
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -122,7 +125,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3328288086530017235, guid: bde1255e5b7e4d045b4904167ba335d6, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 14.63
+      value: 15.966
       objectReference: {fileID: 0}
     - target: {fileID: 3328288086530017235, guid: bde1255e5b7e4d045b4904167ba335d6, type: 3}
       propertyPath: m_LocalPosition.y
@@ -130,7 +133,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3328288086530017235, guid: bde1255e5b7e4d045b4904167ba335d6, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -30.91
+      value: -27.436
       objectReference: {fileID: 0}
     - target: {fileID: 3328288086530017235, guid: bde1255e5b7e4d045b4904167ba335d6, type: 3}
       propertyPath: m_LocalRotation.w
@@ -162,7 +165,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7468118257224018941, guid: bde1255e5b7e4d045b4904167ba335d6, type: 3}
       propertyPath: m_Name
-      value: Enemy (1)
+      value: Enemy
       objectReference: {fileID: 0}
     - target: {fileID: 7501020956302944930, guid: bde1255e5b7e4d045b4904167ba335d6, type: 3}
       propertyPath: m_Speed
