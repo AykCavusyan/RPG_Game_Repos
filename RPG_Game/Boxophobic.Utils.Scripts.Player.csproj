@@ -9,10 +9,10 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{08E6F9A3-A43A-F883-42E7-11D93F8C9A69}</ProjectGuid>
+    <ProjectGuid>{09161ECC-389F-F9B5-4EE9-6CE376BAF079}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <AssemblyName>Assembly-CSharp</AssemblyName>
+    <AssemblyName>Boxophobic.Utils.Scripts</AssemblyName>
     <TargetFrameworkVersion>v4.7.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <BaseDirectory>.</BaseDirectory>
@@ -56,21 +56,24 @@
     <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio Tools for Unity\16.0\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\Control\AIController.cs" />
-    <Compile Include="Assets\Scripts\Core\IAction.cs" />
-    <Compile Include="Assets\Scripts\Combat\Fighter.cs" />
-    <Compile Include="Assets\Scripts\Control\PatrolPath.cs" />
-    <Compile Include="Assets\Scripts\Movement\Mover.cs" />
-    <Compile Include="Assets\Scripts\Core\FollowCamera.cs" />
-    <Compile Include="Assets\Scripts\Combat\CombatTarget.cs" />
-    <Compile Include="Assets\Scripts\Core\Health.cs" />
-    <Compile Include="Assets\Scripts\Core\ActionScheduler.cs" />
-    <Compile Include="Assets\Scripts\Control\PlayerController.cs" />
+    <Compile Include="Assets\Asset Packs\BOXOPHOBIC\Utils\Scripts\StyledInspector\StyledIndent.cs" />
+    <Compile Include="Assets\Asset Packs\BOXOPHOBIC\Utils\Scripts\StyledInspector\StyledButton.cs" />
+    <Compile Include="Assets\Asset Packs\BOXOPHOBIC\Utils\Scripts\StyledInspector\StyledText.cs" />
+    <Compile Include="Assets\Asset Packs\BOXOPHOBIC\Utils\Scripts\StyledInspector\StyledInteractive.cs" />
+    <Compile Include="Assets\Asset Packs\BOXOPHOBIC\Utils\Scripts\StyledInspector\StyledRangeOptions.cs" />
+    <Compile Include="Assets\Asset Packs\BOXOPHOBIC\Utils\Scripts\StyledInspector\StyledBanner.cs" />
+    <Compile Include="Assets\Asset Packs\BOXOPHOBIC\Utils\Scripts\StyledInspector\StyledTexturePreview.cs" />
+    <Compile Include="Assets\Asset Packs\BOXOPHOBIC\Utils\Scripts\StyledInspector\StyledPopupArray.cs" />
+    <Compile Include="Assets\Asset Packs\BOXOPHOBIC\Utils\Scripts\StyledMono\StyledMonoBehaviour.cs" />
+    <Compile Include="Assets\Asset Packs\BOXOPHOBIC\Utils\Scripts\StyledInspector\StyledSpace.cs" />
+    <Compile Include="Assets\Asset Packs\BOXOPHOBIC\Utils\Scripts\StyledInspector\StyledMessage.cs" />
+    <Compile Include="Assets\Asset Packs\BOXOPHOBIC\Utils\Scripts\SettingsUtils\SettingsData.cs" />
+    <Compile Include="Assets\Asset Packs\BOXOPHOBIC\Utils\Scripts\StyledInspector\StyledCategory.cs" />
+    <Compile Include="Assets\Asset Packs\BOXOPHOBIC\Utils\Scripts\StyledInspector\StyledPopupLayers.cs" />
+    <Compile Include="Assets\Asset Packs\BOXOPHOBIC\Utils\Scripts\StyledMono\StyledScriptableObject.cs" />
   </ItemGroup>
   <ItemGroup>
-     <None Include="Assets\Asset Packs\Synty - Polygon Student Sample\README - Usage Rights for these assets.txt" />
-     <None Include="Assets\Asset Packs\BOXOPHOBIC\Skybox Cubemap Extended\Core\Shaders\Skybox Cubemap Extended.shader" />
-     <None Include="Assets\Asset Packs\Animations by Explosive\README - Usage Rights for these assets 1.txt" />
+     <None Include="Assets\Asset Packs\BOXOPHOBIC\Utils\Scripts\Boxophobic.Utils.Scripts.asmdef" />
     <Reference Include="UnityEngine">
       <HintPath>C:\Users\Sebastian\OneDrive\Desktop\Unity\2020.3.2f1\Editor\Data\PlaybackEngines\WindowsStandaloneSupport\Variations\mono\Managed\UnityEngine.dll</HintPath>
     </Reference>
@@ -266,38 +269,8 @@
     <Reference Include="UnityEngine.XRModule">
       <HintPath>C:\Users\Sebastian\OneDrive\Desktop\Unity\2020.3.2f1\Editor\Data\PlaybackEngines\WindowsStandaloneSupport\Variations\mono\Managed\UnityEngine.XRModule.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.VSCode.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.VSCode.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.VisualStudio.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Sysroot.Linux_x86_64">
-      <HintPath>Library\ScriptAssemblies\Unity.Sysroot.Linux_x86_64.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Toolchain.Win-x86_64-Linux-x86_64">
-      <HintPath>Library\ScriptAssemblies\Unity.Toolchain.Win-x86_64-Linux-x86_64.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Timeline.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.Timeline.Editor.dll</HintPath>
-    </Reference>
     <Reference Include="UnityEditor.UI">
       <HintPath>Library\ScriptAssemblies\UnityEditor.UI.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Rider.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.Rider.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.SysrootPackage.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.SysrootPackage.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Boxophobic.SkyboxCubemapExtended.Editor">
-      <HintPath>Library\ScriptAssemblies\Boxophobic.SkyboxCubemapExtended.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Boxophobic.Utils.Editor">
-      <HintPath>Library\ScriptAssemblies\Boxophobic.Utils.Editor.dll</HintPath>
     </Reference>
     <Reference Include="netstandard">
       <HintPath>C:\Users\Sebastian\OneDrive\Desktop\Unity\2020.3.2f1\Editor\Data\NetStandard\ref\2.0.0\netstandard.dll</HintPath>
@@ -646,21 +619,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="Unity.Timeline.csproj">
-      <Project>{8296607D-9B7F-4691-008F-31957BF1EE09}</Project>
-      <Name>Unity.Timeline</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.TextMeshPro.csproj">
-      <Project>{E9F767EE-C2E2-2801-DDF9-AE742B85ADA1}</Project>
-      <Name>Unity.TextMeshPro</Name>
-    </ProjectReference>
     <ProjectReference Include="UnityEngine.UI.csproj">
       <Project>{4281408A-AD21-D8AB-E599-B5391AAB96F5}</Project>
       <Name>UnityEngine.UI</Name>
-    </ProjectReference>
-    <ProjectReference Include="Boxophobic.Utils.Scripts.csproj">
-      <Project>{732A4F35-9A9E-BBD6-F640-3FBB1ECACB54}</Project>
-      <Name>Boxophobic.Utils.Scripts</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

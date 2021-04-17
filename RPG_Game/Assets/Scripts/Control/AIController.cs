@@ -15,6 +15,8 @@ namespace RPG.Control
         [SerializeField] float suspicionTime = 5f;
         [SerializeField] PatrolPath patrolPath = null;
         [SerializeField] float waypointTolerance = 1f;
+        [SerializeField] float dwellTime = 3f;
+        [Range(0,1)] [SerializeField] float patrolSpeedFraction = 0.2f;
 
         Fighter fighter;
         GameObject player;
@@ -23,6 +25,7 @@ namespace RPG.Control
 
         Vector3 guardPosition;
         float timeSinceLastSawPlayer = Mathf.Infinity;
+        float timeSinceArrivedAtWaypoint = Mathf.Infinity;
         int currentWaypointIndex = 0;
 
         // Start is called before the first frame update
@@ -42,7 +45,6 @@ namespace RPG.Control
             if (health.IsDead()) return;
             if (InAttackRangeOffPlayer() && fighter.CanAttack(player))
             {
-                timeSinceLastSawPlayer = 0;
                 AttachBehaviour();
             }
             else if (timeSinceLastSawPlayer < suspicionTime)
@@ -54,7 +56,13 @@ namespace RPG.Control
             {
                 PatrolBehaviour();
             }
+            UpdateTimers();
+        }
+
+        private void UpdateTimers()
+        {
             timeSinceLastSawPlayer += Time.deltaTime;
+            timeSinceArrivedAtWaypoint += Time.deltaTime;
         }
 
         private void PatrolBehaviour()
@@ -65,12 +73,17 @@ namespace RPG.Control
             {
                 if (AtWayPoint())
                 {
+                    timeSinceArrivedAtWaypoint = 0;
                     CycleWaypoint();
                 }
                 nextPosition = GetCurrentWaypoint();
             }
 
-            mover.StartMoveACtion(nextPosition);
+            if (timeSinceArrivedAtWaypoint > dwellTime)
+            {
+                mover.StartMoveACtion(nextPosition, patrolSpeedFraction);
+            } 
+            
         }
 
         private Vector3 GetCurrentWaypoint()
@@ -96,6 +109,7 @@ namespace RPG.Control
 
         private void AttachBehaviour()
         {
+            timeSinceLastSawPlayer = 0;
             fighter.Attack(player);
         }
 
