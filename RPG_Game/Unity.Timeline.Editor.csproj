@@ -97,8 +97,8 @@
     <Compile Include="Library\PackageCache\com.unity.timeline@1.4.6\Editor\Manipulators\Sequence\RectangleTool.cs" />
     <Compile Include="Library\PackageCache\com.unity.timeline@1.4.6\Editor\Manipulators\EditMode.cs" />
     <Compile Include="Library\PackageCache\com.unity.timeline@1.4.6\Editor\treeview\Snapping\ISnappable.cs" />
-    <Compile Include="Library\PackageCache\com.unity.timeline@1.4.6\Editor\Manipulators\Sequence\TrackZoom.cs" />
     <Compile Include="Library\PackageCache\com.unity.timeline@1.4.6\Editor\Attributes\TimelineShortcutAttribute.cs" />
+    <Compile Include="Library\PackageCache\com.unity.timeline@1.4.6\Editor\Manipulators\Sequence\TrackZoom.cs" />
     <Compile Include="Library\PackageCache\com.unity.timeline@1.4.6\Editor\treeview\Drawers\Layers\ClipsLayer.cs" />
     <Compile Include="Library\PackageCache\com.unity.timeline@1.4.6\Editor\Manipulators\Sequence\RectangleSelect.cs" />
     <Compile Include="Library\PackageCache\com.unity.timeline@1.4.6\Editor\Manipulators\TimeIndicator.cs" />
@@ -257,8 +257,8 @@
     <Compile Include="Library\PackageCache\com.unity.timeline@1.4.6\Editor\inspectors\TimelineProjectSettings.cs" />
     <Compile Include="Library\PackageCache\com.unity.timeline@1.4.6\Editor\inspectors\ClipInspector\ClipInspectorSelectionInfo.cs" />
     <Compile Include="Library\PackageCache\com.unity.timeline@1.4.6\Editor\DirectorStyles.cs" />
-    <Compile Include="Library\PackageCache\com.unity.timeline@1.4.6\Editor\Manipulators\AddDelete\AddDeleteItemModeRipple.cs" />
     <Compile Include="Library\PackageCache\com.unity.timeline@1.4.6\Editor\Trackhead.cs" />
+    <Compile Include="Library\PackageCache\com.unity.timeline@1.4.6\Editor\Manipulators\AddDelete\AddDeleteItemModeRipple.cs" />
     <Compile Include="Library\PackageCache\com.unity.timeline@1.4.6\Editor\inspectors\TimelinePreferences.cs" />
     <Compile Include="Library\PackageCache\com.unity.timeline@1.4.6\Editor\treeview\Drawers\TrackItemsDrawer.cs" />
     <Compile Include="Library\PackageCache\com.unity.timeline@1.4.6\Editor\Window\TimelineWindow_TrackGui.cs" />

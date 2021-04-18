@@ -66,6 +66,7 @@
     <Compile Include="Assets\Scripts\Core\Health.cs" />
     <Compile Include="Assets\Scripts\Core\ActionScheduler.cs" />
     <Compile Include="Assets\Scripts\Control\PlayerController.cs" />
+    <Compile Include="Assets\Scripts\Cinematics\CinmaticTrigger.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\Asset Packs\Synty - Polygon Student Sample\README - Usage Rights for these assets.txt" />
@@ -640,6 +641,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="Boxophobic.Utils.Scripts.csproj">
+      <Project>{732A4F35-9A9E-BBD6-F640-3FBB1ECACB54}</Project>
+      <Name>Boxophobic.Utils.Scripts</Name>
+    </ProjectReference>
     <ProjectReference Include="Unity.VSCode.Editor.csproj">
       <Project>{74F40B70-7E5B-7025-4FF1-BADCB0077127}</Project>
       <Name>Unity.VSCode.Editor</Name>
@@ -672,6 +677,10 @@
       <Project>{E9F767EE-C2E2-2801-DDF9-AE742B85ADA1}</Project>
       <Name>Unity.TextMeshPro</Name>
     </ProjectReference>
+    <ProjectReference Include="Boxophobic.Utils.Editor.csproj">
+      <Project>{B9FF00C0-AEDE-8ED8-9E83-63199578E248}</Project>
+      <Name>Boxophobic.Utils.Editor</Name>
+    </ProjectReference>
     <ProjectReference Include="UnityEditor.UI.csproj">
       <Project>{E0E6397D-574B-F8F8-DBDB-7D6B17A86EB8}</Project>
       <Name>UnityEditor.UI</Name>
@@ -688,17 +697,17 @@
       <Project>{565FDF92-511F-E528-1B2B-161A7349829E}</Project>
       <Name>Unity.SysrootPackage.Editor</Name>
     </ProjectReference>
-    <ProjectReference Include="Boxophobic.Utils.Scripts.csproj">
-      <Project>{732A4F35-9A9E-BBD6-F640-3FBB1ECACB54}</Project>
-      <Name>Boxophobic.Utils.Scripts</Name>
-    </ProjectReference>
     <ProjectReference Include="Boxophobic.SkyboxCubemapExtended.Editor.csproj">
       <Project>{32BCF821-E4DA-E112-AA72-F35DA5DF71E7}</Project>
       <Name>Boxophobic.SkyboxCubemapExtended.Editor</Name>
     </ProjectReference>
-    <ProjectReference Include="Boxophobic.Utils.Editor.csproj">
-      <Project>{B9FF00C0-AEDE-8ED8-9E83-63199578E248}</Project>
-      <Name>Boxophobic.Utils.Editor</Name>
+    <ProjectReference Include="com.unity.cinemachine.editor.csproj">
+      <Project>{661E888E-EC33-BF17-A7F4-C34D0D6DDB0E}</Project>
+      <Name>com.unity.cinemachine.editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="Cinemachine.csproj">
+      <Project>{4E56A05B-D068-C244-DAD7-204E2BC98F66}</Project>
+      <Name>Cinemachine</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
