@@ -86,8 +86,8 @@
     <Compile Include="Assets\Asset Packs\BOXOPHOBIC\Utils\Editor\SettingsUtils\SaveSettingsData.cs" />
     <Compile Include="Assets\Asset Packs\BOXOPHOBIC\Utils\Editor\StyledMaterial\StyledTextDrawer.cs" />
     <Compile Include="Assets\Asset Packs\BOXOPHOBIC\Utils\Editor\StyledGUI\DrawInspectorCategory.cs" />
-    <Compile Include="Assets\Asset Packs\BOXOPHOBIC\Utils\Editor\StyledGUI\DrawWindowBanner.cs" />
     <Compile Include="Assets\Asset Packs\BOXOPHOBIC\Utils\Editor\StyledMaterial\StyledOptionsSliderDrawer.cs" />
+    <Compile Include="Assets\Asset Packs\BOXOPHOBIC\Utils\Editor\StyledGUI\DrawWindowBanner.cs" />
     <Compile Include="Assets\Asset Packs\BOXOPHOBIC\Utils\Editor\StyledInspector\StyledSpaceDrawer.cs" />
     <Compile Include="Assets\Asset Packs\BOXOPHOBIC\Utils\Editor\StyledMaterial\StyledRemapSliderDrawer.cs" />
   </ItemGroup>

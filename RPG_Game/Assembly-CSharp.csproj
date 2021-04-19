@@ -60,13 +60,14 @@
     <Compile Include="Assets\Scripts\Core\IAction.cs" />
     <Compile Include="Assets\Scripts\Combat\Fighter.cs" />
     <Compile Include="Assets\Scripts\Control\PatrolPath.cs" />
+    <Compile Include="Assets\Scripts\Cinematics\CinmaticTrigger.cs" />
     <Compile Include="Assets\Scripts\Movement\Mover.cs" />
     <Compile Include="Assets\Scripts\Core\FollowCamera.cs" />
     <Compile Include="Assets\Scripts\Combat\CombatTarget.cs" />
     <Compile Include="Assets\Scripts\Core\Health.cs" />
     <Compile Include="Assets\Scripts\Core\ActionScheduler.cs" />
     <Compile Include="Assets\Scripts\Control\PlayerController.cs" />
-    <Compile Include="Assets\Scripts\Cinematics\CinmaticTrigger.cs" />
+    <Compile Include="Assets\Scripts\Cinematics\CinematicsControlRemover.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\Asset Packs\Synty - Polygon Student Sample\README - Usage Rights for these assets.txt" />
@@ -645,6 +646,14 @@
       <Project>{732A4F35-9A9E-BBD6-F640-3FBB1ECACB54}</Project>
       <Name>Boxophobic.Utils.Scripts</Name>
     </ProjectReference>
+    <ProjectReference Include="Cinemachine.csproj">
+      <Project>{4E56A05B-D068-C244-DAD7-204E2BC98F66}</Project>
+      <Name>Cinemachine</Name>
+    </ProjectReference>
+    <ProjectReference Include="com.unity.cinemachine.editor.csproj">
+      <Project>{661E888E-EC33-BF17-A7F4-C34D0D6DDB0E}</Project>
+      <Name>com.unity.cinemachine.editor</Name>
+    </ProjectReference>
     <ProjectReference Include="Unity.VSCode.Editor.csproj">
       <Project>{74F40B70-7E5B-7025-4FF1-BADCB0077127}</Project>
       <Name>Unity.VSCode.Editor</Name>
@@ -700,14 +709,6 @@
     <ProjectReference Include="Boxophobic.SkyboxCubemapExtended.Editor.csproj">
       <Project>{32BCF821-E4DA-E112-AA72-F35DA5DF71E7}</Project>
       <Name>Boxophobic.SkyboxCubemapExtended.Editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="com.unity.cinemachine.editor.csproj">
-      <Project>{661E888E-EC33-BF17-A7F4-C34D0D6DDB0E}</Project>
-      <Name>com.unity.cinemachine.editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="Cinemachine.csproj">
-      <Project>{4E56A05B-D068-C244-DAD7-204E2BC98F66}</Project>
-      <Name>Cinemachine</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

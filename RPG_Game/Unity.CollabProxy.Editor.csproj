@@ -58,8 +58,8 @@
   <ItemGroup>
     <Compile Include="Library\PackageCache\com.unity.collab-proxy@1.3.9\Editor\Models\IModel.cs" />
     <Compile Include="Library\PackageCache\com.unity.collab-proxy@1.3.9\Editor\Views\IStartView.cs" />
-    <Compile Include="Library\PackageCache\com.unity.collab-proxy@1.3.9\Editor\Utilities\MenuUtilities.cs" />
     <Compile Include="Library\PackageCache\com.unity.collab-proxy@1.3.9\Editor\Views\Adapters\ListAdapters\ToggleableChangeListAdapter.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@1.3.9\Editor\Utilities\MenuUtilities.cs" />
     <Compile Include="Library\PackageCache\com.unity.collab-proxy@1.3.9\Editor\Common\StringArrayContainer.cs" />
     <Compile Include="Library\PackageCache\com.unity.collab-proxy@1.3.9\Editor\UserInterface\CollaborateWindow.cs" />
     <Compile Include="Library\PackageCache\com.unity.collab-proxy@1.3.9\Editor\Components\Menus\FloatingMenuItem.cs" />

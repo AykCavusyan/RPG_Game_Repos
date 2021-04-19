@@ -60,13 +60,14 @@
     <Compile Include="Assets\Scripts\Core\IAction.cs" />
     <Compile Include="Assets\Scripts\Combat\Fighter.cs" />
     <Compile Include="Assets\Scripts\Control\PatrolPath.cs" />
+    <Compile Include="Assets\Scripts\Cinematics\CinmaticTrigger.cs" />
     <Compile Include="Assets\Scripts\Movement\Mover.cs" />
     <Compile Include="Assets\Scripts\Core\FollowCamera.cs" />
     <Compile Include="Assets\Scripts\Combat\CombatTarget.cs" />
     <Compile Include="Assets\Scripts\Core\Health.cs" />
     <Compile Include="Assets\Scripts\Core\ActionScheduler.cs" />
     <Compile Include="Assets\Scripts\Control\PlayerController.cs" />
-    <Compile Include="Assets\Scripts\Cinematics\CinmaticTrigger.cs" />
+    <Compile Include="Assets\Scripts\Cinematics\CinematicsControlRemover.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\Asset Packs\Synty - Polygon Student Sample\README - Usage Rights for these assets.txt" />
@@ -267,6 +268,9 @@
     <Reference Include="UnityEngine.XRModule">
       <HintPath>C:\Users\Sebastian\OneDrive\Desktop\Unity\2020.3.2f1\Editor\Data\PlaybackEngines\WindowsStandaloneSupport\Variations\mono\Managed\UnityEngine.XRModule.dll</HintPath>
     </Reference>
+    <Reference Include="com.unity.cinemachine.editor">
+      <HintPath>Library\ScriptAssemblies\com.unity.cinemachine.editor.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.VSCode.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.VSCode.Editor.dll</HintPath>
     </Reference>
@@ -299,9 +303,6 @@
     </Reference>
     <Reference Include="Boxophobic.SkyboxCubemapExtended.Editor">
       <HintPath>Library\ScriptAssemblies\Boxophobic.SkyboxCubemapExtended.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="com.unity.cinemachine.editor">
-      <HintPath>Library\ScriptAssemblies\com.unity.cinemachine.editor.dll</HintPath>
     </Reference>
     <Reference Include="netstandard">
       <HintPath>C:\Users\Sebastian\OneDrive\Desktop\Unity\2020.3.2f1\Editor\Data\NetStandard\ref\2.0.0\netstandard.dll</HintPath>
@@ -654,6 +655,10 @@
       <Project>{732A4F35-9A9E-BBD6-F640-3FBB1ECACB54}</Project>
       <Name>Boxophobic.Utils.Scripts</Name>
     </ProjectReference>
+    <ProjectReference Include="Cinemachine.csproj">
+      <Project>{4E56A05B-D068-C244-DAD7-204E2BC98F66}</Project>
+      <Name>Cinemachine</Name>
+    </ProjectReference>
     <ProjectReference Include="Unity.Timeline.csproj">
       <Project>{8296607D-9B7F-4691-008F-31957BF1EE09}</Project>
       <Name>Unity.Timeline</Name>
@@ -665,10 +670,6 @@
     <ProjectReference Include="UnityEngine.UI.csproj">
       <Project>{4281408A-AD21-D8AB-E599-B5391AAB96F5}</Project>
       <Name>UnityEngine.UI</Name>
-    </ProjectReference>
-    <ProjectReference Include="Cinemachine.csproj">
-      <Project>{4E56A05B-D068-C244-DAD7-204E2BC98F66}</Project>
-      <Name>Cinemachine</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

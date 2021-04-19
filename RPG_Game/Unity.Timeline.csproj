@@ -95,8 +95,8 @@
     <Compile Include="Library\PackageCache\com.unity.timeline@1.4.6\Runtime\TimelineClip.cs" />
     <Compile Include="Library\PackageCache\com.unity.timeline@1.4.6\Runtime\Events\IMarker.cs" />
     <Compile Include="Library\PackageCache\com.unity.timeline@1.4.6\Runtime\Audio\AudioTrack.cs" />
-    <Compile Include="Library\PackageCache\com.unity.timeline@1.4.6\Runtime\TimelineAsset.cs" />
     <Compile Include="Library\PackageCache\com.unity.timeline@1.4.6\Runtime\Playables\DirectorControlPlayable.cs" />
+    <Compile Include="Library\PackageCache\com.unity.timeline@1.4.6\Runtime\TimelineAsset.cs" />
     <Compile Include="Library\PackageCache\com.unity.timeline@1.4.6\Runtime\Animation\AnimationOutputWeightProcessor.cs" />
     <Compile Include="Library\PackageCache\com.unity.timeline@1.4.6\Runtime\Audio\AudioMixerProperties.cs" />
     <Compile Include="Library\PackageCache\com.unity.timeline@1.4.6\Runtime\Events\Marker.cs" />

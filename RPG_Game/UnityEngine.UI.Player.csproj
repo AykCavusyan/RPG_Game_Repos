@@ -128,9 +128,9 @@
     <Compile Include="C:\Users\Sebastian\OneDrive\Desktop\Unity\2020.3.2f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.ugui\Runtime\UI\Core\Layout\HorizontalOrVerticalLayoutGroup.cs" />
     <Compile Include="C:\Users\Sebastian\OneDrive\Desktop\Unity\2020.3.2f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.ugui\Runtime\UI\Core\IMask.cs" />
     <Compile Include="C:\Users\Sebastian\OneDrive\Desktop\Unity\2020.3.2f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.ugui\Runtime\EventSystem\EventHandle.cs" />
-    <Compile Include="C:\Users\Sebastian\OneDrive\Desktop\Unity\2020.3.2f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.ugui\Runtime\EventSystem\InputModules\StandaloneInputModule.cs" />
     <Compile Include="C:\Users\Sebastian\OneDrive\Desktop\Unity\2020.3.2f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.ugui\Runtime\UI\Core\Layout\LayoutGroup.cs" />
     <Compile Include="C:\Users\Sebastian\OneDrive\Desktop\Unity\2020.3.2f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.ugui\Runtime\UI\Core\Scrollbar.cs" />
+    <Compile Include="C:\Users\Sebastian\OneDrive\Desktop\Unity\2020.3.2f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.ugui\Runtime\EventSystem\InputModules\StandaloneInputModule.cs" />
     <Compile Include="C:\Users\Sebastian\OneDrive\Desktop\Unity\2020.3.2f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.ugui\Runtime\UI\Core\FontUpdateTracker.cs" />
     <Compile Include="C:\Users\Sebastian\OneDrive\Desktop\Unity\2020.3.2f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.ugui\Runtime\UI\Core\ToggleGroup.cs" />
     <Compile Include="C:\Users\Sebastian\OneDrive\Desktop\Unity\2020.3.2f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.ugui\Runtime\EventSystem\RaycastResult.cs" />
