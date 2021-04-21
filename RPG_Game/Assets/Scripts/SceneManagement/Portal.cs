@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
 using UnityEngine.SceneManagement;
 
 namespace RPG.SceneManagement
@@ -9,8 +10,14 @@ namespace RPG.SceneManagement
     public class Portal : MonoBehaviour
     {
 
+        enum DestinationIdentifier
+        {
+            A, B, C, D, E
+        }
+
         [SerializeField] int sceneToLoad = -1;
         [SerializeField] Transform spawnPoint;
+        [SerializeField] DestinationIdentifier destination;
 
         // Start is called before the first frame update
         void Start()
@@ -51,10 +58,7 @@ namespace RPG.SceneManagement
         private void UpdatePlayer(Portal otherPortal)
         {
             GameObject player = GameObject.FindWithTag("Player");
-
-            // WARPI YAZ
-
-            player.transform.position = otherPortal.spawnPoint.position;
+            player.GetComponent<NavMeshAgent>().Warp(otherPortal.spawnPoint.position);
             player.transform.rotation = otherPortal.spawnPoint.rotation;
         }
 
@@ -62,8 +66,16 @@ namespace RPG.SceneManagement
         {
             foreach (Portal portal in FindObjectsOfType<Portal>())
             {
-                if (portal == this) continue;
+                if (portal == this)
+                {
+                    continue;
+                }
+                if (portal.destination != destination)
+                {
+                    continue;
+                } 
 
+                else
                 return portal;
             }
 
