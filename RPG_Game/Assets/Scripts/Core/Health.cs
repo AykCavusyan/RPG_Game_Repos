@@ -7,8 +7,9 @@ namespace RPG.Core
     {
         [SerializeField] float healthPoints = 100f;
         bool iseDead = false;
-
         
+
+
 
         public bool IsDead()
         {
