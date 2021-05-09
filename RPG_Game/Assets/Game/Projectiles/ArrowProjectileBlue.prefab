@@ -79,5 +79,17 @@ PrefabInstance:
       propertyPath: m_Parameters.colorGradient.key1.r
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7511613524127257042, guid: 9f4f8d0ec392a4c47a2569c5ab5a9cc5, type: 3}
+      propertyPath: speed
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 7511613524127257042, guid: 9f4f8d0ec392a4c47a2569c5ab5a9cc5, type: 3}
+      propertyPath: isHoming
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7511613524127257042, guid: 9f4f8d0ec392a4c47a2569c5ab5a9cc5, type: 3}
+      propertyPath: hitEffect
+      value: 
+      objectReference: {fileID: 2666711623369645538, guid: ed11a91ef35429442bdffff75e6234fe, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9f4f8d0ec392a4c47a2569c5ab5a9cc5, type: 3}

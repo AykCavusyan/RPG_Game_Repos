@@ -1,5 +1,6 @@
 using RPG.Core;
 using RPG.Movement;
+using RPG.Saving;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -8,7 +9,7 @@ using UnityEngine;
 
 namespace RPG.Combat
 {
-    public class Fighter : MonoBehaviour, IAction
+    public class Fighter : MonoBehaviour, IAction, ISaveable 
     {
         Health target;
         float timeSinceLastAttack = Mathf.Infinity;
@@ -22,7 +23,11 @@ namespace RPG.Combat
 
         private void Start()
         {
-            EquipWeapon(defaultWeapon);
+            if ( currentWeapon == null)
+            {
+                EquipWeapon(defaultWeapon);
+            }
+
         }
 
         private void Update()
@@ -112,7 +117,17 @@ namespace RPG.Combat
             target = combatTarget.GetComponent<Health>();
         }
 
-        
+        public object CaptureState()
+        {
+            return currentWeapon.name;
+        }
+
+        public void RestoreState(object state)
+        {
+            string weaponName = (string)state;
+            Weapon weapon = Resources.Load<Weapon>(weaponName);
+            EquipWeapon(weapon);
+        }
     }
 }
    

@@ -62,6 +62,7 @@ namespace RPG.SceneManagement
             wrapper.Save();
 
             yield return SceneManager.LoadSceneAsync(sceneToLoad);
+            
 
             // load current level state
             wrapper.Load();
@@ -70,7 +71,7 @@ namespace RPG.SceneManagement
             Portal otherPortal = GetOtherportal();
             UpdatePlayer(otherPortal);
 
-            wrapper.Save();
+            //wrapper.Save();
 
             yield return new WaitForSeconds(fadeWaitTime);
             yield return fader.FadeIn(fadeInTime);
