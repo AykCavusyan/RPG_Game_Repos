@@ -1,9 +1,9 @@
 
 using RPG.Core;
+using RPG.Resources;
 using RPG.Saving;
 using System.Collections;
 using System.Collections.Generic;
-using UnityEditorInternal;
 using UnityEngine;
 using UnityEngine.AI;
 using UnityEngine.UIElements;
