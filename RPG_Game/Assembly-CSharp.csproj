@@ -83,12 +83,18 @@
     <Compile Include="Assets\Scripts\Stats\CharacterClass.cs" />
     <Compile Include="Assets\Scripts\Combat\Weapon.cs" />
     <Compile Include="Assets\Scripts\Control\PlayerController.cs" />
+    <Compile Include="Assets\Scripts\Resources\HealthDisplay.cs" />
+    <Compile Include="Assets\Scripts\Combat\EnemyHealthDisplay.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\Asset Packs\Synty - Polygon Student Sample\README - Usage Rights for these assets.txt" />
+     <None Include="Assets\Asset Packs\Pine Forest_LowPoly\Shaders\Ground_Simple.shader" />
+     <None Include="Assets\Fantasy Forest Environment Free Sample\StandardNoCulling.shader" />
      <None Include="Assets\Asset Packs\SimpleFX\Materials\UnlitVertexColour_Alpha.shader" />
      <None Include="Assets\Asset Packs\BOXOPHOBIC\Skybox Cubemap Extended\Core\Shaders\Skybox Cubemap Extended.shader" />
      <None Include="Assets\Asset Packs\Animations by Explosive\README - Usage Rights for these assets 1.txt" />
+     <None Include="Assets\Asset Packs\Pine Forest_LowPoly\Shaders\Mobile_Vtx_Cutout.shader" />
+     <None Include="Assets\Asset Packs\Pine Forest_LowPoly\Shaders\Mobile_Vtx_Cutout_Wind.shader" />
     <Reference Include="UnityEngine">
       <HintPath>C:\Users\Sebastian\OneDrive\Desktop\Unity\2020.3.2f1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
     </Reference>

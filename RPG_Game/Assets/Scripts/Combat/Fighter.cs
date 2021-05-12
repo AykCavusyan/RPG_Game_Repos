@@ -56,6 +56,11 @@ namespace RPG.Combat
             weapon.Spawn(rightHandTransform, leftHandTransform, animator);
         }
 
+        public Health GetTarget()
+        {
+            return target;
+        }
+
         private void Attackbehavior()
         {
             transform.LookAt(target.transform);
