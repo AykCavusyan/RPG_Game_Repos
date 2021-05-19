@@ -1,20 +1,35 @@
 using RPG.Core;
 using RPG.Saving;
 using RPG.Stats;
+using System;
 using UnityEngine;
 
 namespace RPG.Resources
 {
     public class Health : MonoBehaviour, ISaveable
     {
-        [SerializeField] float healthPoints;
+        [SerializeField] float healthPoints = -1f;
+        [SerializeField] float regenerationPercentage = 70;
         bool iseDead = false;
+        
 
         public void Start()
         {
-           healthPoints = GetComponent<BaseStats>().GetHealth();
+            BaseStats baseStats = GetComponent<BaseStats>();
+
+            if (healthPoints < 0)
+            {
+                healthPoints = baseStats.GetStat(Stat.Health);
+            }
+
+            baseStats.onLevelUp += RegenerateHealth;
         }
 
+        public void RegenerateHealth()
+        {
+            float regenHealthPoints = GetComponent<BaseStats>().GetStat(Stat.Health) * (regenerationPercentage / 100);
+            healthPoints = Mathf.Max(healthPoints, regenHealthPoints);
+        }
 
         public bool IsDead()
         {
@@ -23,20 +38,33 @@ namespace RPG.Resources
 
         
 
-        public void TakeDamage(float damage)
+        public void TakeDamage(GameObject instigator, float damage)
         {
+            print(gameObject.name + "took damage" + damage);
+
             healthPoints = Mathf.Max(healthPoints - damage, 0);
             print(healthPoints);
 
             if (healthPoints == 0)
             {
                 Die();
+                AwardExperience(instigator);
             }
+        }
+
+        public float GetHealthPoints()
+        {
+            return healthPoints;
+        }
+
+        public float GetMaxHealthPoints()
+        {
+            return GetComponent<BaseStats>().GetStat(Stat.Health);
         }
 
         public float GetPercentage()
         {
-            return  100 * (healthPoints / GetComponent<BaseStats>().GetHealth());
+            return  100 * (healthPoints / GetComponent<BaseStats>().GetStat(Stat.Health));
         }
 
         private void Die()
@@ -48,6 +76,13 @@ namespace RPG.Resources
             iseDead = true;
         }
 
+        private void AwardExperience(GameObject instigator)
+        {
+            Experience experience = instigator.GetComponent<Experience>();
+                if (experience == null) return;
+
+            experience.GainExperience(GetComponent<BaseStats>().GetStat(Stat.ExperienceReward));
+        }
 
         public object CaptureState()
         {

@@ -14,7 +14,7 @@ CapsuleCollider:
   m_Height: 2.14
   m_Direction: 1
   m_Center: {x: 0, y: 0.87, z: 0}
---- !u!114 &756913868
+--- !u!114 &6445164298087380702
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -23,10 +23,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 6854339442443972314}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9556cbe440ce2c24cadb83b8a5b1628a, type: 3}
+  m_Script: {fileID: 11500000, guid: 0871530c2405fc54080896f36eab9cde, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  healthPoints: 100
+  experiencePoints: 0
 --- !u!114 &8973885229737209419
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -90,6 +90,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3511515737889043129, guid: bde1255e5b7e4d045b4904167ba335d6, type: 3}
+      propertyPath: startingLevel
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3511515737889043129, guid: bde1255e5b7e4d045b4904167ba335d6, type: 3}
+      propertyPath: shouldUseModifiers
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3511515737889043129, guid: bde1255e5b7e4d045b4904167ba335d6, type: 3}
+      propertyPath: levelUpParticleEffect
+      value: 
+      objectReference: {fileID: 6548923161791111343, guid: d7f0c41115a71814f841ef8b8afa554e, type: 3}
     - target: {fileID: 3773602296074639723, guid: bde1255e5b7e4d045b4904167ba335d6, type: 3}
       propertyPath: weaponPrefab
       value: 
@@ -97,9 +109,17 @@ PrefabInstance:
     - target: {fileID: 3773602296074639723, guid: bde1255e5b7e4d045b4904167ba335d6, type: 3}
       propertyPath: defaultWeapon
       value: 
-      objectReference: {fileID: 11400000, guid: 9597ae701f1b8d3428b9d95c74244b25, type: 2}
+      objectReference: {fileID: 11400000, guid: 4efe08a8d7e703046b7c0a6f91671c87, type: 2}
     - target: {fileID: 3773602296074639723, guid: bde1255e5b7e4d045b4904167ba335d6, type: 3}
       propertyPath: handTransform
+      value: 
+      objectReference: {fileID: 4098756542154545316}
+    - target: {fileID: 3773602296074639723, guid: bde1255e5b7e4d045b4904167ba335d6, type: 3}
+      propertyPath: leftHandTransform
+      value: 
+      objectReference: {fileID: 4098756542154619084}
+    - target: {fileID: 3773602296074639723, guid: bde1255e5b7e4d045b4904167ba335d6, type: 3}
+      propertyPath: rightHandTransform
       value: 
       objectReference: {fileID: 4098756542154545316}
     - target: {fileID: 6857145951174998009, guid: bde1255e5b7e4d045b4904167ba335d6, type: 3}
@@ -187,6 +207,11 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 3f6fc0cf5e5d31c458bc74ede87cb8ae, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 679ff741e12a7e740819ede24a7000b7, type: 3}
+--- !u!4 &4098756542154619084 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 403948, guid: 679ff741e12a7e740819ede24a7000b7, type: 3}
+  m_PrefabInstance: {fileID: 4098756542154215712}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &4098756542154545316 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 461188, guid: 679ff741e12a7e740819ede24a7000b7, type: 3}

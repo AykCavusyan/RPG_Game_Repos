@@ -14,19 +14,6 @@ CapsuleCollider:
   m_Height: 2.0987196
   m_Direction: 1
   m_Center: {x: 0.014030457, y: 0.9136205, z: -0.010586739}
---- !u!114 &-2949933476292555694
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2928346209065457134}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9556cbe440ce2c24cadb83b8a5b1628a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  healthPoints: 10
 --- !u!114 &-405797263525343484
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -199,6 +186,10 @@ PrefabInstance:
       propertyPath: rightHandTransform
       value: 
       objectReference: {fileID: 1494018144}
+    - target: {fileID: 6857145951174998009, guid: bde1255e5b7e4d045b4904167ba335d6, type: 3}
+      propertyPath: uniqueIdentifier
+      value: 21c2b98c-ceb2-46b7-acf7-af7a6570cdd1
+      objectReference: {fileID: 0}
     - target: {fileID: 7468118257224018941, guid: bde1255e5b7e4d045b4904167ba335d6, type: 3}
       propertyPath: m_Name
       value: Enemy

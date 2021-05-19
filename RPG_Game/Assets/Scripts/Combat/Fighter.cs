@@ -2,6 +2,7 @@ using RPG.Core;
 using RPG.Movement;
 using RPG.Resources;
 using RPG.Saving;
+using RPG.Stats;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -10,7 +11,7 @@ using UnityEngine;
 
 namespace RPG.Combat
 {
-    public class Fighter : MonoBehaviour, IAction, ISaveable 
+    public class Fighter : MonoBehaviour, IAction, ISaveable , IModifierProvider
     {
         Health target;
         float timeSinceLastAttack = Mathf.Infinity;
@@ -76,24 +77,28 @@ namespace RPG.Combat
         //Animation Event
         void Hit()
         {
+            float damage = GetComponent<BaseStats>().GetStat(Stat.Damage);
+            
             if (target == null)
             {
                 return;
             }
-
-            target.TakeDamage(currentWeapon.GetDamage());
+            if (currentWeapon.HasProjectile())
+            {
+                currentWeapon.LaunchProjectile(rightHandTransform, leftHandTransform, target, gameObject, damage);
+            }
+            else
+            {
+                target.TakeDamage(gameObject, damage);
+            }
+            
         }
 
         //Animation Event
         void Shoot()
         {
-            if (target == null)
-            {
-                return;
-            }
-
-            currentWeapon.LaunchProjectile(rightHandTransform, leftHandTransform, target);
-
+            Hit();
+           
         }
 
 
@@ -117,6 +122,22 @@ namespace RPG.Combat
             return targetToTest != null && !targetToTest.IsDead();
         }
 
+        public IEnumerable<float> GetAdditiveModifers(Stat stat)
+        {
+            if(stat == Stat.Damage)
+            {
+                yield return currentWeapon.GetDamage();
+            }
+        }
+
+        public IEnumerable<float> GetPercentageModifiers(Stat stat)
+        {
+            if (stat == Stat.Damage)
+            {
+                yield return currentWeapon.GetPercentageBonus();
+            }
+        }
+
         public void Attack(GameObject combatTarget)
         {
             GetComponent<ActionScheduler>().StartAction(this);
@@ -134,6 +155,8 @@ namespace RPG.Combat
             Weapon weapon = UnityEngine.Resources.Load<Weapon>(weaponName);
             EquipWeapon(weapon);
         }
+
+       
     }
 }
    
