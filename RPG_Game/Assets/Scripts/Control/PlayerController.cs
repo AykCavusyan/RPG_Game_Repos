@@ -15,11 +15,16 @@ namespace RPG.Control
         private Mover mover;
         Health health;
 
-        // Start is called before the first frame update
-        void Start()
+        private void Awake()
         {
             mover = GetComponent<Mover>();
             health = GetComponent<Health>();
+        }
+
+        // Start is called before the first frame update
+        void Start()
+        {
+           
         }
 
         // Update is called once per frame

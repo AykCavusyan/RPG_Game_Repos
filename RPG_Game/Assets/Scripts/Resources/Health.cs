@@ -13,6 +13,8 @@ namespace RPG.Resources
         bool iseDead = false;
         
 
+        
+
         public void Start()
         {
             BaseStats baseStats = GetComponent<BaseStats>();
@@ -22,7 +24,16 @@ namespace RPG.Resources
                 healthPoints = baseStats.GetStat(Stat.Health);
             }
 
-            baseStats.onLevelUp += RegenerateHealth;
+        }
+
+        private void OnEnable()
+        {
+            GetComponent<BaseStats>().onLevelUp += RegenerateHealth;
+        }
+
+        private void OnDisable()
+        {
+            GetComponent<BaseStats>().onLevelUp -= RegenerateHealth;
         }
 
         public void RegenerateHealth()

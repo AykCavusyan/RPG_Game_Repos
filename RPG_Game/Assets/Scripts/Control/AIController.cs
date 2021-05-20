@@ -29,13 +29,19 @@ namespace RPG.Control
         float timeSinceArrivedAtWaypoint = Mathf.Infinity;
         int currentWaypointIndex = 0;
 
-        // Start is called before the first frame update
-        void Start()
+        private void Awake()
         {
             fighter = GetComponent<Fighter>();
             player = GameObject.FindGameObjectWithTag("Player");
             mover = GetComponent<Mover>();
             health = GetComponent<Health>();
+        }
+
+
+        // Start is called before the first frame update
+        void Start()
+        {
+            
 
             guardPosition = transform.position;
         }

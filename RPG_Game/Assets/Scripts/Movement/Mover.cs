@@ -16,10 +16,16 @@ namespace RPG.Movement
         [SerializeField] float maxSpeed = 6f;
         Health health;
 
+        void Awake()
+        {
+            health = GetComponent<Health>();
+            player = GetComponent<NavMeshAgent>();
+        }
+
         // Start is called before the first frame update
         void Start()
         {
-            health = GetComponent<Health>();
+            
         }
 
         // Update is called once per frame
