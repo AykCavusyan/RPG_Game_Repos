@@ -292,8 +292,8 @@
     <Compile Include="Library\PackageCache\com.unity.timeline@1.4.6\Editor\TimelineEditor.cs" />
     <Compile Include="Library\PackageCache\com.unity.timeline@1.4.6\Editor\Utilities\AnimatedParameterCache.cs" />
     <Compile Include="Library\PackageCache\com.unity.timeline@1.4.6\Editor\treeview\IRowGUI.cs" />
-    <Compile Include="Library\PackageCache\com.unity.timeline@1.4.6\Editor\inspectors\BuiltInCurvePresets.cs" />
     <Compile Include="Library\PackageCache\com.unity.timeline@1.4.6\Editor\Animation\CurvesProxy.cs" />
+    <Compile Include="Library\PackageCache\com.unity.timeline@1.4.6\Editor\inspectors\BuiltInCurvePresets.cs" />
     <Compile Include="Library\PackageCache\com.unity.timeline@1.4.6\Editor\Signals\SignalManager.cs" />
     <Compile Include="Library\PackageCache\com.unity.timeline@1.4.6\Editor\Manipulators\AddDelete\AddDeleteItemModeReplace.cs" />
     <Compile Include="Library\PackageCache\com.unity.timeline@1.4.6\Editor\Recording\AnimationTrackRecorder.cs" />
